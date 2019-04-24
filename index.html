@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- seo თეგები საძიებო სისტემებისთვის -->
+		<!-- seo -->
 		<meta charset="UTF-8">
 		<meta name="rentalcar" content="rental cars center">
 		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
 		<meta name="author" content="Nino Mumladze">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- საიტის სახელი -->
 		<title>rentalcar</title>
-		<!-- facebook - ზე გასაზიარებელი ინფორმაციისათვის შესაბამისი მეტა თეგები -->
+		<!-- facebook -->
 		<meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
 		<meta property="og:type"               content="PrivateBusiness" />
 		<meta property="og:title"              content="Hire a car and travel to any destination of Georgia" />
 		<meta property="og:description"        content="Hire a car and travel safely" />
-		<meta property="og:image"              content="img/io1.jpg" alt="fb image-io1"/>
-		<!-- icon - ების დასაკავშირებელი ლინკი -->
+		<meta property="og:image"              content="img/io1.jpg"/>
+		<!-- icon link -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-		<!-- bootstrap - ის ფაილები -->
+		<!-- bootstrap - files -->
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/mg-glaho-drunk/css/mg-glaho-drunk.min.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css ">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 	</head>
 	<body>
 		<header>
@@ -47,39 +47,40 @@
 					</ul>
 				</nav>
 				<div>
-					<img class="login" src="icon/login.png" href="login.html" alt="login">
+					<img href="login.html" class="login" src="icon/login.png" alt="login">
 					<button type="button" class="btn btn-warning" onclick="window.location.href='login.html'">შესვლა</button>
 				</div>
 			</div>
 		</header>
 		<section>
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-			  </ol>
-			  <div class="carousel-inner">
-			    <div class="carousel-item active" style="background-image: url('http://rent-car.ge/wp-content/uploads/2016/06/FB_IMG_1470143626042.jpg');">
+			<div class="container-fluid" style="padding-top: 59.3px;"> 
+			  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			    <!-- Indicators -->
+			    <ol class="carousel-indicators">
+			      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			      <li data-target="#myCarousel" data-slide-to="1"></li>
+			      <li data-target="#myCarousel" data-slide-to="2"></li>
+			    </ol>
+			    <!-- slides -->
+			    <div class="carousel-inner" >
+			      <div class="item active" style="background-image: url('http://rent-car.ge/wp-content/uploads/2016/06/FB_IMG_1470143626042.jpg');">
+			      </div>
+			      <div class="item" style="background-image: url('https://www.carsbase.com/photo/mitsubishi/mitsubishi-pajero-pinin-mk36-pic105877.jpg');">
+			      </div>  
+			      <div class="item" style="background-image: url('http://blog.automart.co.za/wp-content/uploads/2015/12/Pajero-Sport.jpg');">
+			      </div>
 			    </div>
-			    <div class="carousel-item" style="background-image: url('http://bsnscb.com/data/out/129/27253402-mitsubishi-pajero-wallpapers.jpg');">
-			    </div>
-			    <div class="carousel-item" style="background-image: url('http://blog.automart.co.za/wp-content/uploads/2015/12/Pajero-Sport.jpg');">
-			    </div>
-			    <div class="carousel-item" style="background-image: url('https://www.carsbase.com/photo/mitsubishi/mitsubishi-pajero-pinin-mk36-pic105877.jpg');">
-			    </div>
+			    <!-- Left and right controls -->
+			    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			      <span class="glyphicon glyphicon-chevron-left"></span>
+			      <span class="sr-only">Previous</span>
+			    </a>
+			    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+			      <span class="glyphicon glyphicon-chevron-right"></span>
+			      <span class="sr-only">Next</span>
+			    </a>
 			  </div>
-			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-			    <span class="sr-only">Next</span>
-			  </a>
 			</div>
-
 		</section>
 		<section>
 			<div class="container-fluid d-flex justify-content-between align-items-center flex-wrap" style="margin-top: 30px;">
@@ -96,12 +97,17 @@
 		</section>	
 		<section>
 			<div class="social-icons">
-				<a  href="https://www.facebook.com/pages/category/Community/Mitsubishi-Pajero-Iopinin-4x4-club-1503779696578208/"><i class="fab fa-facebook-f"></i></a>
-				<a href="https://www.youtube.com/channel/UCXdgBxZP5FQCLBY08YgYPfw"><i class="fab fa-youtube">
-				</i></a>
-				<a  href="https://twitter.com/pajeroclub4x4?lang=en"><i class="fab fa-twitter "></i></a>
-				
+				<a  href="https://www.facebook.com/pages/category/Community/Mitsubishi-Pajero-Iopinin-4x4-club-1503779696578208/"><i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="https://www.youtube.com/channel/UCXdgBxZP5FQCLBY08YgYPfw">
+					<i class="fab fa-youtube"></i>
+				</a>
+				<a  href="https://twitter.com/pajeroclub4x4?lang=en">
+					<i class="fab fa-twitter "></i>
+				</a>	
 			</div>
 		</section>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	</body>
 </html>
