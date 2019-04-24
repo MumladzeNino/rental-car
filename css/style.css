@@ -83,8 +83,7 @@
 .box .col-4 h4{
 	font-weight: bold;
 }
-@media (max-width: 320px;){
-	.box .col-md-12{
-		height: 900px;
-	}
-}
+.container-video .video{
+	padding-top: 15px;
+	margin-right: 10px;
+
